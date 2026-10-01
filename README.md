@@ -14,3 +14,11 @@ npm run dev
 - 受注一覧（納期順、品名クリックで編集）
 - 受注 新規作成・編集・削除（品名・得意先・数量・納期・備考の5項目、必須チェック付き）
 - データはブラウザの localStorage に保存（`src/store.ts`）
+
+## Render へのデプロイ（テスト公開）
+リポジトリ直下の `render.yaml`（Blueprint）で静的サイトとして公開できます。
+1. Render ダッシュボードで **New → Blueprint** を選択
+2. このリポジトリを接続し、`render.yaml` を読み込んで **Apply**
+3. ビルド完了後、`https://mr-iwasaki-app.onrender.com` のようなURLで公開されます
+
+※ `branch` は現在 `claude/fervent-hopper-47qhhh`。main にマージ後は `main` に変更してください。

@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mr-iwasaki-app
+    runtime: static
+    branch: claude/fervent-hopper-47qhhh
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
